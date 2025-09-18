@@ -30,7 +30,6 @@ describe('Login Form Test', () => {
   it("Email ve password doğru ama checkbox işaretlenmemiş, buton disabled", () => {
     cy.get('[data-testid="email-input"]').type("test@wit.com");
     cy.get('[data-testid="password-input"]').type("12345678");
-    // checkbox işaretlenmedi
 
     cy.get('[data-testid="submit-button"]').should("be.disabled");
   });
