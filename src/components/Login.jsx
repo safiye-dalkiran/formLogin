@@ -83,6 +83,7 @@ export default function Login() {
                 <FormGroup>
                     <Label for="exampleEmail">Email</Label>
                     <Input
+                        data-testid="email-input"
                         id="exampleEmail"
                         name="email"
                         placeholder="Enter your email"
@@ -96,6 +97,7 @@ export default function Login() {
                 <FormGroup>
                     <Label for="examplePassword">Password</Label>
                     <Input
+                        data-testid="password-input"
                         id="examplePassword"
                         name="password"
                         placeholder="Enter your password "
@@ -108,6 +110,7 @@ export default function Login() {
                 </FormGroup>
                 <FormGroup check>
                     <Input
+                        data-testid="terms-checkbox"
                         id="terms"
                         name="terms"
                         checked={form.terms}
@@ -119,7 +122,7 @@ export default function Login() {
                     </Label>
                 </FormGroup>
                 <FormGroup className="text-center p-4">
-                    <Button color="primary" disabled={!isValid}>
+                    <Button data-testid="submit-button" color="primary" disabled={!isValid}>
                         Sign In
                     </Button>
                 </FormGroup>
